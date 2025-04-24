@@ -28,6 +28,15 @@
         "order_book_top": 1,
         "price_last_balance": 0.0
     },
+    "pairlists": [
+        {
+            "method": "StaticPairList",
+            "pairs": [
+                "USDT/BTC", "USDT/ETH", "USDT/BNB", "USDT/SOL", "USDT/XRP",
+                "USDT/ADA", "USDT/PEPE", "USDT/DOGE", "USDT/LINK", "USDT/DOT"
+            ]
+        }
+    ],
     "exchange": {
         "name": "binance",
         "key": "YOUR_API_KEY",
