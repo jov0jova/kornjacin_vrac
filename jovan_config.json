@@ -1,0 +1,94 @@
+{
+    "stake_currency": "USDT",
+    "stake_amount": 60,
+    "tradable_balance_ratio": 0.8,
+    "reserve_ratio": 0.2,
+    "max_open_trades": 5,
+    "min_open_trades": 1,
+    "timeframe": "5m",
+    "strategy": "GoldenHydra",
+    "dry_run": true,
+    "dry_run_wallet": 60,
+    "stoploss": -0.012,
+    "minimal_roi": {
+        "0": 0.015
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "YOUR_API_KEY",
+        "secret": "YOUR_SECRET_KEY",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": [
+            "USDT/BTC", "USDT/ETH", "USDT/BNB", "USDT/SOL", "USDT/XRP",
+            "USDT/ADA", "USDT/PEPE", "USDT/DOGE", "USDT/LINK", "USDT/DOT"
+        ],
+        "pair_blacklist": ["USDT/USDC", "USDT/USDT"],
+        "fee": 0.001
+    },
+    "api_server": {
+        "enabled": false,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "cFt-7500jov0jova",
+        "CORS_origins": [],
+        "username": "jov0jova",
+        "password": "cFt-7500jov0jova1996",
+        "ws_token": "secret_ws_t0ken."
+    },
+    "bot_name": "GoldenHydraBot",
+    "telegram": {
+        "enabled": false,
+        "token": "YOUR_BOT_API_TOKEN",
+        "chat_id": "YOUR_CHAT_ID"
+    },
+    "dry_run_wallet": 60,
+    "cancel_open_orders_on_exit": true,
+    "use_sell_signal": true,
+    "sell_profit_only": false,
+    "buy_profit_only": false,
+    "sell_at_market_price": false,
+    "use_custom_stoploss": false,
+    "custom_stoploss": {
+        "method": "strategy", 
+        "stoploss_value": -0.012
+    },
+    "order_types": {
+        "buy": "limit",
+        "sell": "limit"
+    },
+    "max_slippage": 0.05,
+    "max_failed_trades": 5,
+    "enable_pair_filter": true,
+    "pair_filter": {
+        "min_volume": 10000,
+        "min_close": 1.0,
+        "max_open_trades": 5
+    },
+    "logging": {
+        "log_level": "INFO",
+        "logfile": "freqtrade.log"
+    },
+    "database": {
+        "url": "sqlite:///freqtrade.db"
+    },
+    "trading_mode": "normal",
+    "telegram": {
+        "enabled": false,
+        "token": "YOUR_BOT_API_TOKEN",
+        "chat_id": "YOUR_CHAT_ID"
+    },
+    "notifications": {
+        "enabled": true,
+        "on_buy": true,
+        "on_sell": true,
+        "on_error": true
+    },
+    "performance_metrics": {
+        "enabled": true,
+        "start_date": "2023-01-01",
+        "end_date": "2023-12-31"
+    }
+}
