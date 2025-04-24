@@ -1,5 +1,9 @@
 {
-  "exit_pricing": "limit",  // or "market" depending on your desired behavior
+  "exit_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
   "stake_currency": "USDT",
   "stake_amount": 60,
   "tradable_balance_ratio": 0.8,
