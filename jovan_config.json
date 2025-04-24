@@ -74,7 +74,7 @@
     "database": {
         "url": "sqlite:///freqtrade.db"
     },
-    "trading_mode": "normal",
+    "trading_mode": "spot",
     "telegram": {
         "enabled": false,
         "token": "YOUR_BOT_API_TOKEN",
