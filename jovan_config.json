@@ -1,4 +1,5 @@
 {
+  "exit_pricing": "limit",  // or "market" depending on your desired behavior
   "stake_currency": "USDT",
   "stake_amount": 60,
   "tradable_balance_ratio": 0.8,
@@ -6,7 +7,7 @@
   "max_open_trades": 5,
   "min_open_trades": 1,
   "timeframe": "5m",
-  "strategy": "GoldenHydraStrategy",
+  "strategy": "GoldenHydra",
   "dry_run": true,
   "dry_run_wallet": 60,
   "stoploss": -0.012,
